@@ -1,0 +1,118 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: url(wp4631408-kolkata-wallpapers.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.menubar
+{
+    
+    text-align: center;
+    
+}
+.menubar ul{
+    
+    display: inline-flex;
+    align-items: center;
+    color: white;
+}
+.menubar ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+    color: #d30bee;
+    padding: 20px;
+    transition: 0.4s ease-in-out;
+}
+.menubar ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.menubar ul li a:hover
+{
+    
+    color: #d30bee;
+    border-radius: 3px;
+    
+}
+
+.submenu1
+{
+    display: none;
+}
+
+.menubar ul li:hover .submenu1
+{
+    display: block;
+    position: absolute;
+    background: #ff00c1;
+    margin-top: 15px;
+    margin-right: -15px;
+}
+.menubar ul li:hover .submenu1 ul
+{
+    display: block;
+    margin: 10px;
+}
+
+.menubar ul li:hover .submenu1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menubar ul li:hover .submenu1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menubar ul li:hover .submenu1 ul li a:hover
+{
+     color: rgb(53, 255, 2);
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+
+}
+.par
+{
+   padding-left: 20px;
+   padding-bottom: 25px;
+   font-family: arial;
+   letter-spacing: 1.2px; 
+   line-height: 30px;
+}
+.content h1
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content span
+{
+    color: #ff00c1;
+    font-size: 60px;
+}
