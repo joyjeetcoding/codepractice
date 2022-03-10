@@ -1,1 +1,1 @@
-These files are from my initial days of Web Development
+These files are from my initial days of Web Development Practice
