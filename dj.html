@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Music Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .header {
+            font-family: 'Permanent Marker', cursive;
+        }
+
+        body {
+            background-image: url(photo-1470225620780-dba8ba36b745.jpg);
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            color: white;
+
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 60px;
+            top: 30px;
+        }
+
+        .left img {
+            filter: invert(100%);
+            width: 115px;
+
+        }
+
+        .left div {
+            text-align: center;
+            color: rgb(65 255 46);
+            font-weight: bold;
+            font-size: 23px;
+        }
+
+        /* .mid {
+            display: block;
+            width: 33%;
+            margin: 20px auto;
+            border: 2px solid aqua;
+
+        } */
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            /* border: 2px solid blue; */
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            color: white;
+            font-size: 24px;
+            margin-top: 9px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+            font-weight: bold;
+
+        }
+
+        .navbar li a:hover {
+            color: rgb(65 255 46);
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            transform: 0.3s ease;
+            color: rgb(65 255 46);
+        }
+
+        .container {
+            /* border: 3px solid rgb(255, 47, 10); */
+            margin: 158px auto;
+            padding: 46px 32px;
+            width: 33%;
+            border-radius: 8px;
+
+        }
+
+        .formgroup input {
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-family: 'Permanent Marker', cursive;
+            background: #fff;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-family: 'Luckiest Guy', cursive;
+            color: #fff200;
+        }
+
+        .container button {
+            display: block;
+            width: 88%;
+            margin: 31px auto;
+            border-radius: 5px;
+            /* color: #ff0023; */
+            background: rgb(65 255 46);
+            font-weight: bold;
+            padding: 3px;
+            font-size: 18px;
+            font-family: 'Permanent Marker';
+        }
+        .formgroup #name
+        {
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="PikPng.com_music-logo-png_1092654.png" alt="">
+            <div>
+                CITY CLUB
+            </div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="right">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Join Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons
+        <div class="right">
+            right
+        </div> -->
+    </header>
+    <br>
+    <div class="container">
+        <h1>Join the DJ NIGHT</h1>
+        <br>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" id="name" placeholder="Enter your Name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" id="name" placeholder="Enter your Age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" id="name" placeholder="Enter your Gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" id="name" placeholder="Enter your Contact No.">
+            </div>
+            <button class="btn">
+                Submit
+            </button>
+        </form>
+
+    </div>
+</body>
+
+</html>
